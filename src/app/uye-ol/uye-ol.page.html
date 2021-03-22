@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Öğrenci Kayıt Sayfası</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button text="Önceki"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label position="floating" color="danger">Ad:</ion-label>
+        <ion-input [(ngModel)]="ad" type="email" required color="primary"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating" color="danger">Soyad:</ion-label>
+        <ion-input [(ngModel)]="soyad" type="email" required color="primary"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating" color="danger">Şifre:</ion-label>
+        <ion-input [(ngModel)]="sifre" type="password" required color="primary"></ion-input>
+    </ion-item>
+    <!--    Butona birşeyler yazılıp silinince aktif olmaması için gerekli kontroller-->
+    <ion-button (click)="reg()" [disabled]="ad == null|| ad == '' || soyad == null || soyad == '' || sifre == null" type="submit" color="primary" expand="block">Kayıt Onay</ion-button>
+    <ion-button fill="clear" type="submit" color="light" expand="block" routerLink="/giris">Giriş Sayfası</ion-button>
+</ion-content>

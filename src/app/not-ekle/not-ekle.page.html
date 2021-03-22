@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Not Ekleme Sayfası</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button text="Önceki"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label position="floating" color="danger">Ders Adı:</ion-label>
+        <ion-input maxlength="20" [(ngModel)]="dersAd" type="text" required color="primary"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating" color="danger">Ders Notu:</ion-label>
+        <ion-textarea [(ngModel)]="fullNot" type="text" required color="primary"></ion-textarea>
+    </ion-item>
+    <ion-button (click)="notAdd()" [disabled]="!fullNot" type="submit" color="danger" expand="block">Ders Notunu Paylaş</ion-button>
+</ion-content>

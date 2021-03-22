@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>    {{ad}}</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button color="dark" text="Önceki"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card color="light">
+        <ion-card-header>
+            <ion-card-content>{{not}}</ion-card-content>
+        </ion-card-header>
+    </ion-card>
+    <ion-button [routerLink]="['/edit-not',id]" color="primary" expand="block">Düzenle</ion-button>
+    <ion-button (click)="del(id)" color="danger" expand="block">Sil</ion-button>
+</ion-content>

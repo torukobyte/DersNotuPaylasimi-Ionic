@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+    <ion-toolbar style="padding: 10px;">
+        <ion-title>
+            <ion-fab horizontal="center" style="margin-left: -15%;margin-top: -3%;">Not Sayfası</ion-fab>
+            <ion-fab vertical="center" horizontal="end">
+                <ion-fab-button routerLink="/not-ekle" size="small" color="primary">
+                    <ion-icon name="add-circle"></ion-icon>
+                </ion-fab-button>
+            </ion-fab>
+            <ion-fab vertical="center" horizontal="start">
+                <ion-fab-button (click)="out()" size="small" color="danger">
+                    <ion-icon name="log-out"></ion-icon>
+                </ion-fab-button>
+            </ion-fab>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-card *ngFor="let not of dersNot">
+        <ion-card-header>
+            <ion-card-title>{{not.dersAd}}</ion-card-title>
+            <ion-fab horizontal="end" vertical="center">
+                <ion-fab-button style="padding: 10px;" [routerLink]="['/full-not',not.id]" color="dark">
+                    <ion-icon size="large" name="information"></ion-icon>
+                </ion-fab-button>
+            </ion-fab>
+        </ion-card-header>
+    </ion-card>
+</ion-content>

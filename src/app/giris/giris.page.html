@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Öğrenci Giriş Sayfası</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label position="floating" color="danger">Okul No:</ion-label>
+        <ion-input [(ngModel)]="okulNo" type="email" required color="primary"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating" color="danger">Şifre:</ion-label>
+        <ion-input [(ngModel)]="sifre" type="password" required color="primary"></ion-input>
+    </ion-item>
+    <ion-button (click)="log()" [disabled]="!sifre" type="submit" color="danger" expand="block">Giriş</ion-button>
+    <ion-button routerLink="/uye-ol" fill="clear" type="submit" color="light" expand="block">Kayıt Sayfası</ion-button>
+</ion-content>
