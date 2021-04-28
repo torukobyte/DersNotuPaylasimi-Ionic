@@ -3,7 +3,7 @@
 Ionic 5 ve firebase kullanılarak oluşturuldu.Kayıt,Giriş,Çıkış ayrıca ders notu paylaşımı için 'CRUD' (Create,Read,Update and Delete) işlemleri mevcut.
 Adınız Soyadınız ve şifreniz ile kayıt oluyorsunuz ardından size özel bir okul numarası ile eposta oluşturuluyor bu eposta ve oluşturmuş olduğunuz şifreniz ile giriş yapıp uygulama içerisinde ders notlarınızı diğer öğrenciler ile paylaşabiliyorsunuz.
 
-Gerekli güncellemeler ile daha güzel ve kullanılabilir bir hale gelebilir bunun için gerekli olan örn: Ankara Üniversitesine kayıtlı öğrenciler için öğreni numaralarının tutulduğu veritabanından numaralar çekilip kayıt kısmı kaldırılıp sadece öğrencilerin giriş yapabileceği bir hale getirilebilir.Öğrencilerin bölümleri ve hatta sınıflarına göre ayrı bölümler açılıp sadece ilgili sınıfta olan öğrenciler bir birleriyle not paylaşımında bulunabilir.
+Gerekli güncellemeler ile daha güzel ve kullanılabilir bir hale gelebilir bunun için gerekli olan örn: Ankara Üniversitesine kayıtlı öğrenciler için öğrenci numaralarının tutulduğu veritabanından numaralar çekilip kayıt kısmı kaldırılıp sadece öğrencilerin giriş yapabileceği bir hale getirilebilir.Öğrencilerin bölümleri ve hatta sınıflarına göre ayrı bölümler açılıp sadece ilgili sınıfta olan öğrenciler bir birleriyle not paylaşımında bulunabilir.
 
 ```
 npm -i veya npm --install
